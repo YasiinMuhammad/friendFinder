@@ -1,8 +1,6 @@
-var path = require("path");
 var tableData = require("../data/tableData");
 
-
-module.exports = function(app) {
+module.exports = function (app) {
     // API GET Requests
     // Below code handles when users "visit" a page.
     // In each of the below cases when a user visits a link
@@ -16,31 +14,29 @@ module.exports = function(app) {
    
   
     app.post('/api/friends', function(req, res){
+        // console.log(req.body)
       var bestMatch = {
           name: "",
           photo: "",
-          friendDifference: 1000
+          friendDifference: 40
       };
 
       var userData = req.body;
-      var userName = userData.name;
-      var userPhoto = userData.photo;
-      var userScores = userData.scores;
+      var userScores = req.body.scores;
+        // console.log(userScores)
+    //   var totalDifference = 0;
 
-      var totalDifference = 0;
+      for (var i = 0; i < tableData.length; i++) {
+         console.log(tableData[i].scores);
+        
+         var totalDifference = 0;
 
-      for (var i=0; i< tableData.length; i++) {
-
-          console.log(tableData[i].name);
-          totalDifference = 0;
-
-          for (var j=0; j<tableData[i].scores[j]; j++){
-
-              totalDifference += Math.abs(parseInt(userScores[j] - tableData[i].scores[j]));
+          for (var j = 0; j < tableData[i].scores.length; j++){
+            var difference = Math.abs(parseInt(userScores[j] - tableData[i].scores[j]));
+            totalDifference += difference;
           }
 
-          if (totalDifference <= bestMatch.friendDifference){
-
+          if (totalDifference < bestMatch.friendDifference){
               bestMatch.name = tableData[i].name;
               bestMatch.photo = tableData[i].photo;
               bestMatch.friendDifference = totalDifference;
@@ -51,5 +47,7 @@ module.exports = function(app) {
 
       res.json(bestMatch);
 });
-  };
+};
+
+
   

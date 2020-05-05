@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    .header {
+      padding: 0%;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: blue;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid header">
+    <ul>
+      <li><a href="/*">Home</a></li>
+      <li><a href="/api/friends">Friends List</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h1> Friend Finder </h1>
+    <h3>Survey Questions Instructions</h3>
+    <p> Please answer all questions to complete the survey.
+      Once all questions are answered to the best of your knowledge you will recive your results hit submit and find a
+      friend.
+      On a scale of 1-5, please rate the anwsers to the questions below. 1 being least likely, and 5 being mostly
+      likely. </p>
+    <hr>
+
+    <h4>Please enter your name. (Required)</h4>
+    <input type="text" id="yourName" class="form-control" required="">
+    <br />
+    <h4>Please add a photo. (Required)</h4>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Your image must begin with "http://" or "https://"</label>
+        <!-- <input type="file" class="form-control-file" id="yourImage"> -->
+        <input type="text" class="form-control" id="yourImage" placeholder="Your Image">
+      </div>
+
+
+      <hr>
+
+      <h3><strong>Question #1</strong></h3>
+      <h4> Your mind is always buzzing with unexplored ideas and plans.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q0">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <h3><strong>Question #2</strong></h3>
+      <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q1">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+
+
+      <h3><strong>Question #3</strong></h3>
+      <h4>You find it easy to stay relaxed and focused even when under pressure.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q2">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+
+
+      <h3><strong>Question #4</strong></h3>
+      <h4>You rarely do something just out of sheer curiosity.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q3">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+
+
+      <h3><strong>Question #5</strong></h3>
+      <h4>People can rarely upset you.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q4">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <h3><strong>Question #6</strong></h3>
+      <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q5">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+
+
+      <h3><strong>Question #7</strong></h3>
+      <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q6">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+
+      <h3><strong>Question #8</strong></h3>
+      <h4>You rarely get carried away by fantasies and ideas.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q7">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+
+      <h3><strong>Question #9</strong></h3>
+      <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+      </h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q8">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+
+      <h3><strong>Question #10</strong></h3>
+      <h4>You feel more energetic after spending time with a group of people.</h4>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Select an Option</label>
+        <select class="form-control" id="q9">
+          <option value="empty"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </form>
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button style="margin-bottom: 75px;" type="submit" class="btn btn-primary btn-lg btn-block" id="submitButton"><i
+        class="fa fa-check-circle" aria-hidden="true"></i>
+      Submit</button>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="resultsModal" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"><strong>Your Best Friend</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="matchName"></h2>
+          <img class="img-responsive" id="matchImage" src="#" style="max-height:250px">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <script type="text/javascript">
+
+    $("#submitButton").on("click", function (event) {
+      // Don't reload the page
+      event.preventDefault();
+
+      // Make sure all form elements were selected
+      // function userValidation() {
+      // Start with correct validation
+      var valid = true;
+
+      // Check if user entered yourName
+      if ($("#yourName").val() === "") {
+        // If a value is empty, validation is incorrect
+        valid = false;
+      }
+
+      // Check if user entered yourImg
+      else if ($("#yourImage").val() === "") {
+        // If a value is empty, validation is incorrect
+        valid = true;
+      }
+
+      // Check if yourImg begins with "http://" or "https://"
+      else if ($("#yourImage").val().charAt(4) !== ":" && $("#yourImage").val().charAt(5) !== ":") {
+        // If yourImg isn't "http://" or "https://", validation is incorrect
+        valid = false;
+      }
+
+      if ($("#q0").val() === "empty", $("#q1").val() === "empty", $("#q2").val() === "empty", $("#q3").val() === "empty", $("#q4").val() === "empty", $("#q5").val() === "empty", $("#q6").val() === "empty", $("#q7").val() === "empty", $("#q8").val() === "empty", $("#q9").val() === "empty", $("#q9").val() === "empty") {
+
+        valid = false;
+      }
+      // Check dropdown boxes for empty values (top values are always empty)
+      // $(".chosen-select").each(function() {
+      // 	if ($(this).val() === "") {
+      // 		// If a valid option has not been selected, validation is incorrect
+      // 		valid = false;
+      // 	}
+      // });
+
+      // This function will return true if validation is correct, false if not
+      //   return valid;
+      // }
+
+
+      // Move forward if validation is correct
+      if (valid === true) {
+
+        var formAnswers = {
+          name: $("#yourName").val().trim(),
+          photo: $("#yourImage").val().trim(),
+          scores: [
+            parseInt($("#q0").val()),
+            parseInt($("#q1").val()),
+            parseInt($("#q2").val()),
+            parseInt($("#q3").val()),
+            parseInt($("#q4").val()),
+            parseInt($("#q5").val()),
+            parseInt($("#q6").val()),
+            parseInt($("#q7").val()),
+            parseInt($("#q8").val()),
+            parseInt($("#q9").val())
+          ]
+        };
+
+
+        // AJAX POST to api/friends.
+        $.post("/api/friends", formAnswers, function (data) {
+          // Update the match modal with the correct name & image
+          console.log(data)
+          $("#matchName").html("<h2>" + data.name + "</h2>");
+          $("#matchImage").attr("src", data.photo);
+
+          // Show the match modal
+          $("#resultsModal").modal("toggle");
+        });
+      }
+      // If the user validation failed
+      else {
+        alert("Please answer all of the questions correctly!");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
